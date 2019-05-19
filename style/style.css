@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("img/wallpaper.jpg");/*papel de parede do fundo do site ou background se preferir*/
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed ;
+    font-family:sans-serif;
+    
+}
+.boxTop {
+    background: #121212;
+    height: 5%;
+    width: 100%;
+    position: fixed;
+    border-radius: 0px 0px 30px 30px;
+    z-index: 2;
+  }
+  
+/* css class box1 */
+.box1 {
+    width: 300px;
+    height: 600px;
+    background:rgba(0,0,0,0.7);
+    top:10%;
+    left: 40%;
+    position: absolute;
+    border-radius: 5%;
+    border-radius: 0px 50px 0px 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10%;
+    z-index: 1;
+}
+/* css class box2 */
+.box1 > .box2 {
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background:#FFF;
+    box-sizing: border-box;   
+}
+/*css do da div onde esta meu avatar*/
+.box2 > .circle {/* Ao  ultilizar o sinal de > se diz que dentro da minha class box eu tenho uma class circle e quero atingila */
+    width: 150px;
+    height: 150px;
+    top:10%;
+    left: 25%;
+    position: absolute;
+    background: url("img/terra.png");/* Aqui se coloca a imagen diretamente pelo css*/
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    border-radius: 80%;/*border-radius arredonda as bordas */
+    -moz-border-radius: 80px 80px;
+    -webkit-border-radius: 80px 80px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+/* css do meu avatar do login */
+.avatar {
+    width: 230px;
+    height: 70px;
+    position: absolute;;
+    top:50px;
+    left: calc(-7% - 30px);
+}
+/* css inputs */
+input {
+    width: 280px;
+    height: 30px;
+    top:50%;
+    position: relative;
+    margin-bottom: 5%;
+    left: calc(13% - 30px);
+    border:none;
+    outline:none;
+    background-color: #FFF;
+    border-bottom: 1px solid #808080;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+    }
+/* css button */
+button {
+    width: 100px;
+    height: 30px;
+    position: relative;
+    top:50%;
+    color: #FFFFFF;
+    font-style: unset;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+    left: calc(70% - 30px);
+    background: #FF4500;
+    border-radius: 50px 50px 50px 50px;
+    border:none!important;
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+button:hover{/*hover para quando se passar o mouse acima do button mudar a cor para mais clara*/
+    font-style: unset;
+    background:	#FF6347;
+}
+
+button:focus {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+/* css link para acessar pagina alternativa */
+.linkCadastrar {
+    position: absolute;
+    top:90%;
+    color: #FF4500;
+    font-style: unset;
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+footer{
+    position: fixed;
+    top: 96%;
+    margin-bottom:0%;
+    color: #fff;
+    display: block;
+    height: 4%;
+    width: 100%;
+    background: #121212; 
+    text-align: center;
+    padding: 0%;
+    border-radius: 30px 30px 0px 0px;
+  }
+footer > p {
+    margin-top: 0%;
+    position: relative;
+    height: 1%;
+    width: 30%;
+    left:35%;font-size: 80%;
+}
+h1 > a{
+    position: fixed;
+    height:20px;
+    width: 100px;
+    background: #FF4500;
+    top:1%;
+    color: #FFF;
+    font-style: unset; 
+    text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);  
+    left: calc(92% - 30px);
+    font-size: 10px;
+    text-align: center;
+    padding-top: 7px;
+    text-decoration: none;
+    border-radius: 0px 20px 0px 20px;
+    z-index: 2;
+}
+
